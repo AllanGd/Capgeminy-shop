@@ -7,11 +7,10 @@
         <nav class="main-header__menu">
             <ul>
                 <li><a >Produtos</a></li>
-                <li><a >
-                    
+                <li routerLink="carrinho"><a >                    
                     <i class="fa-solid fa-cart-minus"></i>
-                    carinho
-                    <span class="badge-carrinho">0</span>
+                    carrinho
+                    <span class="badge-carrinho">{{carrinhoService.obtemCarrinho().length}}</span>
                 </a></li>
                 <li><a >Contatos</a></li>
                 <li><a ><i class="fa-brands fa-facebook-f"></i></a></li>
