@@ -8,6 +8,7 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
+import { BarraPesquisaComponent } from './barra-pesquisa/barra-pesquisa.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    PaginaNaoEncontradaComponent
+    PaginaNaoEncontradaComponent,
+    BarraPesquisaComponent
   ],
   imports: [
     BrowserModule,
