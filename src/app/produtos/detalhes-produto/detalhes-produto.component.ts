@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CarrinhoService } from 'src/app/carrinho.service';
 import { NotificacaoService } from 'src/app/notificacao.service';
-import { IProduto, IProdutoCarrinho } from 'src/app/produtos';
+import { IProduto, IProdutoCarrinho, produtos } from 'src/app/produtos';
 import { ProdutosService } from 'src/app/produtos.service';
 
 @Component({
@@ -25,7 +25,6 @@ export class DetalhesProdutoComponent implements OnInit {
     const routerParams = this.router.snapshot.paramMap;
     const produtId = Number(routerParams.get("id"));
     this.produto = this.produtoService.getOne(produtId);
-    console.table(this.produto);
   }
 
 
